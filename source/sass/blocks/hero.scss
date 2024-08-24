@@ -246,11 +246,10 @@
   position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 20px;
-  width: 88px;
   z-index: 1;
 
   @media (min-width: $desktop-width) {
@@ -258,7 +257,6 @@
     left: auto;
     right: 120px;
     transform: translate(0, 0);
-    width: 100px;
     padding-bottom: 0;
   }
 }
