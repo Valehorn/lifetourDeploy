@@ -17,10 +17,10 @@
 
   @media (min-width: $tablet-width) and (max-width: $pre-desktop-width) {
     background-image:
-      image-set(url("../../img/adv/adv-bg-clouds-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/adv/adv-bg-clouds-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/adv/adv-bg-clouds-tablet@1x.png") type("image/png") 1x,
-      url("../../img/adv/adv-bg-clouds-tablet@2x.png") type("image/png") 2x);
+      image-set(url("/img/adv/adv-bg-clouds-tablet@1x.webp") type("image/webp") 1x,
+      url("/img/adv/adv-bg-clouds-tablet@2x.webp") type("image/webp") 2x,
+      url("/img/adv/adv-bg-clouds-tablet@1x.png") type("image/png") 1x,
+      url("/img/adv/adv-bg-clouds-tablet@2x.png") type("image/png") 2x);
     background-repeat: no-repeat;
     background-position: left calc(50% + 33px);
   }
