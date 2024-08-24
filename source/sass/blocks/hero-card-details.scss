@@ -1,0 +1,14 @@
+@use "../global/variables";
+
+.hero-card-details {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    min-height: 44px;
+    padding-right: 18px;
+    padding-left: 40px;
+  }
+}

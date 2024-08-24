@@ -1,0 +1,31 @@
+@use "../global/variables";
+
+.nav-link {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    content: "";
+    width: calc(100% + 10px);
+    height: calc(100% - 10px);
+    border: 1px solid transparent;
+    transition: border 0.5s ease;
+    pointer-events: none;
+  }
+
+  @media (max-width: $pre-tablet-width) {
+    &::before {
+      top: 0;
+      left: 0;
+      width: calc(100% + 1px);
+      height: calc(100% + 1px);
+    }
+  }
+}
+
+.nav-link--disabled {
+  color: $disabled;
+  pointer-events: none;
+}

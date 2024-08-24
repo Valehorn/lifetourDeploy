@@ -1,0 +1,459 @@
+@use "../global/variables";
+
+.training {
+  padding-top: 36px;
+  padding-bottom: 20px;
+
+  p:not([class]) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  p:not([class]) br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 40px;
+
+    p:not([class]) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 29px;
+    }
+
+    p:not([class]) br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 65px;
+
+    p:not([class]) {
+      width: 820px;
+      margin-bottom: 62px;
+    }
+
+    p:not([class]) br {
+      display: none;
+    }
+  }
+}
+
+.training__title-container {
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.training__title-decoration {
+  top: -17px;
+  left: 0;
+}
+
+.training__instructors {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.training__swiper-buttons-container {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -65px;
+    right: 0;
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -55px;
+  }
+}
+
+.training__swiper {
+  width: 290px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin-bottom: 56px;
+  }
+}
+
+.training__card {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  min-height: 356px;
+  background-color: #ffffff;
+  padding: 15px 14px;
+
+  p:first-of-type {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 356px;
+
+    p:first-of-type {
+      width: auto;
+    }
+  }
+}
+
+.training__image-container {
+  width: 260px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 182.67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+  }
+}
+
+.training__image {
+  display: block;
+  object-fit: cover;
+}
+
+.training__description-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  p:first-of-type {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    width: 170px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    p:first-of-type {
+      width: 150px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    p:first-of-type {
+      width: 140px;
+    }
+  }
+}
+
+.training__vk-link {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  align-self: flex-start;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 14px;
+    height: 8px;
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-repeat: no-repeat;
+    mask-size: 14px 8px;
+    mask-position: center;
+    background-color: $primary-color;
+  }
+}
+
+.training__process-title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 29px;
+  }
+}
+
+.training__process-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  padding-left: 61px;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    content: "";
+    width: 2px;
+    height: 89%;
+    background-color: $secondary-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 105px 45px;
+    padding-left: 35px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 253.33px) 1fr;
+    gap: 0;
+    padding-left: 45px;
+
+    &::before {
+      display: block;
+      left: 21px;
+      width: calc(100% - 21px);
+      height: 2px;
+      top: 112%;
+    }
+  }
+}
+
+.training__process-item {
+  --process-image: 0;
+  --process-size: 0;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: -61px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: $secondary-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -32px;
+    width: 25px;
+    height: 25px;
+    mask-image: var(--process-image);
+    mask-size: var(--process-size);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $primary-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        display: block;
+        top: 103%;
+        left: -25px;
+      }
+    }
+  }
+}
+
+
+.training__process-item--spot {
+  --process-image: url("/__spritemap#sprite-map-view");
+  --process-size: 24px 25px;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 1px;
+      left: -35px;
+    }
+  }
+}
+
+.training__process-item--equipment {
+  --process-image: url("/__spritemap#sprite-boots-view");
+  --process-size: 25px 20.09px;
+
+  br:first-of-type {
+    display: none;
+  }
+
+  &::after {
+    top: 1px;
+    left: -35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    br:first-of-type {
+      display: block;
+    }
+
+    &::after {
+      top: 2px;
+      left: -34px;
+    }
+  }
+}
+
+.training__process-item--ecology {
+  --process-image: url("/__spritemap#sprite-trees-view");
+  --process-size: 24.43px 25px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+    padding-left: 20px;
+
+    br {
+      display: block;
+    }
+
+    br:first-of-type {
+      display: none;
+    }
+
+    &::after {
+      top: 1px;
+      left: -14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: auto;
+    padding-left: 0;
+
+    br:first-of-type {
+      display: block;
+    }
+
+    br:nth-of-type(2) {
+      display: none;
+    }
+
+    &::before {
+      left: -45px;
+    }
+
+    &::after {
+      top: 2px;
+      left: -35px;
+    }
+  }
+}
+
+.training__process-item--obstacles {
+  --process-image: url("/__spritemap#sprite-mountains-view");
+  --process-size: 25px 24.7px;
+
+  br:first-of-type {
+    display: none;
+  }
+
+  br:nth-of-type(3) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+
+    &::after {
+      top: 1px;
+      left: -33px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: auto;
+
+    br:first-of-type {
+      display: block;
+    }
+
+    br:nth-of-type(2) {
+      display: none;
+    }
+
+    br:nth-of-type(3) {
+      display: block;
+    }
+
+    &::after {
+      top: 2px;
+      left: -35px;
+    }
+  }
+}
+
+.training__process-description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

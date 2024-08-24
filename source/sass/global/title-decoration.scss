@@ -1,0 +1,23 @@
+@use "./variables";
+
+.title-decoration {
+  position: absolute;
+  top: 0;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 800;
+  color: $primary-color;
+  opacity: 0.03;
+  pointer-events: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
