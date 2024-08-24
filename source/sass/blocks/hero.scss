@@ -219,14 +219,17 @@
 
 .hero .hero__swiper {
   width: 320px;
+  height: 568px;
   z-index: 0;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    height: 1034px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    height: auto;
   }
 }
 
