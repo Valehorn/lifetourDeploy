@@ -8,6 +8,7 @@
     "test": "backstop test --config=pp.config.cjs",
     "test-content": "vitest content.test.ts --ui",
     "build": "vite build --emptyOutDir",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview --open",
     "convert-rastr": "node convert-rastr.js",
     "w3c": "html-validator source --quiet",
